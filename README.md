@@ -16,7 +16,7 @@ Obtenir les informations d'un utilisateur via son ID :
 ```
 GET https://auth.etna-alternance.net/api/users/{id}
 ```
-Obtenir les promotions de l'utilisateurs :
+Obtenir les promotions de l'utilisateur courant :
 ```
 GET https://prepintra-api.etna-alternance.net/promo
 ```
@@ -39,7 +39,7 @@ format: 2017-04-17+00:00:00 ou 2017-04-17
 ```
 Obtenir les notes :
 ```
-GET https://prepintra-api.etna-alternance.net/terms/205/students/{login}/marks
+GET https://prepintra-api.etna-alternance.net/terms/{promo_id}/students/{login}/marks
 ```
 ### Trombinoscope
 Obtenir le trombinoscope toutes promotions confondues :
@@ -100,7 +100,7 @@ https://prepintra-api.etna-alternance.net/sessions/{id_session}/project/{id_proj
 ```
 Obtenir les informations d'un projet (mon groupe) :
 ```
-GET https://prepintra-api.etna-alternance.net/sessions/2553/project/11353/mygroup
+GET https://prepintra-api.etna-alternance.net/sessions/{id_session}/project/{id_project}/mygroup
 ```
 ## Contact
-bedmin_j@etna-alternance.net
+joseph@etna.io
