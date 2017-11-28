@@ -10,6 +10,7 @@ fields: login <string>, password <string>
 Obtenir des informations sur son compte une fois connecté :
 ```
 GET https://auth.etna-alternance.net/identity
+headers: {Cookie: <cookie>}
 ```
 ### Informations utilisateurs
 Obtenir les informations d'un utilisateur via son ID :
